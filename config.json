@@ -1,0 +1,40 @@
+FILE: config.json
+
+CONTENT:
+{
+    "config": {
+        "version": 1,
+        "settings": {
+            "synchronize_period": 10,
+            "synchronize_delta": 20,
+            "synchronize_timeout": 10000
+        },
+        "endpoints": {
+            "s3_endpoint": "s3.example.com",
+            "s3_bucket_name": "bucket-name"
+        },
+        "database": {
+            "db_host": "localhost",
+            "db_port": 3306,
+            "db_name": "database",
+            "db_user": "user",
+            "db_password": "password",
+            "db_schema": "schema"
+        },
+        "logging": {
+            "log_level": "DEBUG",
+            "log_file": "/path/to/log/file.log",
+            "log_format": "json"
+        },
+        "server": {
+            "server_host": "localhost",
+            "server_port": 8080,
+            "server_name": "server"
+        },
+        "security": {
+            "jwt_secret": "secret",
+            "jwt_issuer": "issuer",
+            "jwt_audience": "audience"
+        }
+    }
+}
